@@ -709,7 +709,7 @@ section {
 }
 
 .section-bg {
-  background-color: #1a1814;
+  background-color: black;
 }
 
 .section-title {
@@ -1568,6 +1568,13 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background: url("../img/try.png") center center no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+
 .contact .info {
   width: 100%;
 }
@@ -1599,6 +1606,16 @@ section {
   font-size: 14px;
   color: #bab3a6;
 }
+
+.email-link {
+  color: #bab3a6;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
 
 .contact .info .open-hours,
 .contact .info .email,
@@ -1634,7 +1651,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: yellowgreen;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1653,7 +1670,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #cda45e;
+  border: 5px solid #ece9e3;
   border-top-color: #1a1814;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1665,7 +1682,7 @@ section {
   box-shadow: none;
   font-size: 14px;
   background: #0c0b09;
-  border-color: #625b4b;
+  border-color: #f3f0ea;
   color: white;
 }
 
@@ -1676,7 +1693,7 @@ section {
 
 .contact .php-email-form input::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: #a49b89;
+  color: #ebebeb;
 }
 
 .contact .php-email-form input:focus,
@@ -1693,7 +1710,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #7fa07f;
+  background: yellowgreen;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1702,9 +1719,8 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: yellowgreen;
+  background: #7fa07f;
 }
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1772,7 +1788,7 @@ section {
 }
 
 #footer .footer-top .social-links a {
-  font-size: 18px;
+  font-size: 20px;
   display: inline-block;
   background: #28251f;
   color: #fff;
@@ -1781,8 +1797,8 @@ section {
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   transition: 0.3s;
 }
 

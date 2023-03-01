@@ -514,7 +514,7 @@ background: rgba(12, 11, 9, 0.6);
 
 #hero p {
   color:whitesmoke;
-  font size: 12px;
+  font-size: 12px;
   letter-spacing: 1px;
   line-height: 1.6;
   font-family: "Poppins", sans-serif;

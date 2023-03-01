@@ -1185,19 +1185,19 @@ section {
   transition: 0.3s;
   color: #fff;
   border-radius: 0;
-  border-right: 2px solid #cda45e;
+  border-right: 2px solid #f3f3f3;
   font-weight: 600;
   font-size: 15px;
 }
 
 .specials .nav-link:hover {
-  color: #cda45e;
+  color: yellowgreen;
 }
 
 .specials .nav-link.active {
   color: #1a1814;
-  background: #cda45e;
-  border-color: #cda45e;
+  background: #FFFFE0;
+  border-color: #cccccb;
 }
 
 .specials .nav-link:hover {
@@ -1340,7 +1340,7 @@ section {
 }
 
 .events .event-item .price span {
-  border-bottom: 2px solid yellowgreen;
+  border-bottom: 2px solid #9acd32;
 }
 
 .events .event-item ul {
@@ -1577,7 +1577,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #cda45e;
+  background: yellowgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1693,7 +1693,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #cda45e;
+  background: #7fa07f;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1702,7 +1702,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #d3af71;
+  background: yellowgreen;
 }
 
 @-webkit-keyframes animate-loading {

@@ -1772,14 +1772,30 @@ section {
 }
 
 #footer .footer-top .footer-info h3 {
-  font-size: 18px;
+  font-size: 25px;
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 500;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: rgb(184, 238, 76);
+  text-shadow: 0 0 10px yellowgreen, 0 0 20px rgb(205, 138, 50), 0 0 30px rgb(205, 99, 50);
+  animation: glow 3s ease-in-out infinite;
 }
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px yellowgreen, 0 0 20px yellowgreen, 0 0 30px yellowgreen;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(153, 205, 50, 0.644), 0 0 20px rgba(153, 205, 50, 0.575), 0 0 30px yellowgreen;
+  }
+}
+
+
 #footer .footer-top .footer-info i {
   padding-right: 2px;
   color: yellowgreen;
@@ -1789,7 +1805,7 @@ section {
 
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Playfair Display", serif;
@@ -1857,6 +1873,15 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  font-size: 16px;
+}
+
+#footer .footer-top .footer-links h4 {
+  color: rgba(153, 205, 50, 0.705);
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  
+
 }
 
 #footer .footer-top .footer-links ul a:hover {
@@ -1990,4 +2015,133 @@ section {
  .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
   pointer-events: none; 
 }
+
+
+.career {
+  background: url("../img/try.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+.career .team-details h3 {
+  text-align: center;
+  font-family:"Poppins", sans-serif;
+  text-shadow: 0 0 10px yellowgreen;
+}
+
+.career .team-details .team-position {
+  text-align: center;
+  font-family:"Poppins", sans-serif;
+  font-size: 16px;
+  color: white;
+  border-bottom: 2px solid yellowgreen;
+  line-height: 1.5;
+}
+
+
+.career .container-fluid {
+  width: 80%; 
+  height:max-content
+}
+
+.career-innerW:hover {
+  background: #0b3014;
+  border-radius: 20px;
+}
+
+.arrow-list .bi-arrow-right-square-fill {
+  color: rgb(145, 248, 167);
+}
+
+.overdenture {
+   background: url("../img/od-bg.png") ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: auto; /* or height: 100%; */
+}
+
+.overdenture .cont {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.overdenture h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(153, 205, 50, 0.781);
+  text-align: center;
+  font-family:"Poppins", sans-serif;
+  text-shadow: 0 0 10px rgb(10, 9, 9);
+}
+
+.overdenture p {
+  font-size: 20px;
+  color: rgb(238, 240, 236);
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 10px rgb(10, 9, 9);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.overdenture .arrow .bi-arrow-right-square-fill {
+  color: yellowgreen;
+}
+
+.overdenture .arrow a {
+  color: white;
+  font-size: 18px;
+}
+
+.overdenture .tab {
+  box-sizing: border-box;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.overdenture .tab .column {
+  float: left;
+  width: 13%;
+  padding: 5px;
+}
+
+.overdenture .tab .column img {
+  float: center;
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.overdenture .tab img:hover {
+  opacity: 1;
+}
+
+.overdenture .tab .row:after {
+  opacity: 1;
+}
+
+.overdenture .tab2 .container {
+  position: relative;
+  display: none;
+}
+
+.overdenture .tab2 .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: yellowgreen;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 

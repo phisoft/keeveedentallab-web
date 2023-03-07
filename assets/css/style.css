@@ -1991,3 +1991,38 @@ section {
   pointer-events: none; 
 }
 
+.carousel-item {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.carousel-caption h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.carousel-caption h1 span {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: yellowgreen;
+}
+
+
+.carousel-caption p {
+  font-size: 18px;
+}
+
+
+

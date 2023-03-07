@@ -236,12 +236,17 @@ background: rgba(12, 11, 9, 0.6);
 # Carousel
 --------------------------------------------------------------*/
 
-
 .carousel-item {
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
+
+/* .carousel-item img {
+  max-width: 100%;
+  height: auto;
+} */
+
 
 .carousel-caption {
   position: absolute;
@@ -250,7 +255,23 @@ background: rgba(12, 11, 9, 0.6);
   text-align: left;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
+  /* background: url("../img/try.png");
+  background-position: center;
+  background-size: cover; */
 }
+
+/* .column1 {
+  flex: 1; 
+}
+
+.column2 {
+  flex: 0 0 30%; 
+  margin-right: 20px; 
+}
+
+.column2 img {
+  max-width: 100%; 
+} */
 
 .carousel-caption h1 {
   font-family: "Poppins", sans-serif;
@@ -259,9 +280,7 @@ background: rgba(12, 11, 9, 0.6);
 }
 
 .carousel-caption h1 span {
-  font-family: "Poppins", sans-serif;
   font-size: 40px;
-  font-weight: bold;
   color: yellowgreen;
 }
 
@@ -269,6 +288,52 @@ background: rgba(12, 11, 9, 0.6);
 .carousel-caption p {
   font-size: 18px;
 }
+
+/* For screens smaller than 576px (mobile devices) */
+@media (max-width: 576px) {
+  .carousel-caption h1 {
+    font-size: 24px;
+  }
+  
+  .carousel-caption h1 span {
+    font-size: 28px;
+  }
+  
+  .carousel-caption p {
+    font-size: 16px;
+  }
+}
+
+.carousel-img {
+  background: url("../img/green-bg.png");
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-img1 {
+  background: url("../img/abt.bg2.png");
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-img2 {
+  background: url("../img/green-bg.png");
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Book a table button Menu
@@ -1246,7 +1311,7 @@ section {
   transition: 0.3s;
   color: #fff;
   border-radius: 0;
-  border-right: 2px solid #f3f3f3;
+  /* border-right: 2px solid #f3f3f3; */
   font-weight: 600;
   font-size: 15px;
 }
@@ -2188,13 +2253,6 @@ section {
   font-size: 40px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
 
 
 

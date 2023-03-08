@@ -235,6 +235,80 @@ background: rgba(12, 11, 9, 0.6);
 /*--------------------------------------------------------------
 # Carousel
 --------------------------------------------------------------*/
+.carousel-item {
+  position: relative;
+}
+
+.carousel-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-caption1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 1px 1px 1px #131212;
+  text-align: center;
+}
+
+
+.carousel-caption1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.carousel-caption1 span {
+   color: yellowgreen;
+}
+
+.carousel-caption1 h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  line-height: 1.6;
+  text-shadow: 0 0 5px #2f523c, 0 0 10px #2b2a2a, 0 0 15px #2c572e;
+ 
+}
+
+.carousel-caption1 .logo {
+  display: inline-block;
+  max-width: 40%;
+  margin-left: 1rem;
+}
+
+.carousel-caption1 .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption1 h1 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-caption1 span {
+    font-size: 2rem;
+  }
+  
+  .carousel-caption1 p {
+    font-size: 1rem;
+  }
+  
+  .carousel-caption1 .logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
 
 .carousel-item {
   background-position: center;
@@ -250,7 +324,7 @@ background: rgba(12, 11, 9, 0.6);
 
 .carousel .btn-menu {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   display: inline-block;
@@ -346,18 +420,13 @@ background: rgba(12, 11, 9, 0.6);
 
 .carousel-caption h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 35px;
+  font-size: 38px;
   font-weight: bold;
 }
 
 .carousel-caption h1 span {
   font-size: 40px;
   color: yellowgreen;
-}
-
-
-.carousel-caption p {
-  font-size: 18px;
 }
 
 /* For screens smaller than 576px (mobile devices) */
@@ -369,10 +438,7 @@ background: rgba(12, 11, 9, 0.6);
   .carousel-caption h1 span {
     font-size: 28px;
   }
-  
-  .carousel-caption p {
-    font-size: 16px;
-  }
+
 }
 
 .carousel-img {
@@ -691,7 +757,7 @@ background: rgba(12, 11, 9, 0.6);
   line-height: 56px;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  text-align:left;
+  text-align: left;
 }
 
 #hero h1 span {
@@ -715,7 +781,7 @@ background: rgba(12, 11, 9, 0.6);
 #hero1 {
   width: 100%;
   height: 80vh;
-  background: url("../img/images.jpg") top center;
+  background: url("../img/green-bg.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -743,12 +809,13 @@ background: rgba(12, 11, 9, 0.6);
 
 #hero1 h1 {
   margin: 0;
-  font-size: 60x;
-  font-weight: 600;
+  font-size: 40x;
+  font-weight: 500;
   line-height: 56px;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  text-align:left;
+  text-align:center;
+  list-style: 1.2;
 }
 
 #hero1 h1 span {
@@ -2325,6 +2392,24 @@ section {
   color: #6EDD04;
   font-size: 40px;
   cursor: pointer;
+}
+
+.abt-facebook {
+  background: url("../img/green-bg.png");
+}
+
+.abt-facebook h2{
+  padding-top: 30%;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  color: yellowgreen;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px #dbd9d92d;
+
+}
+
+.abt-facebook .fb-page{
+  border-radius: 4px;
 }
 
 

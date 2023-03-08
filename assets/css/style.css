@@ -767,11 +767,11 @@ background: rgba(12, 11, 9, 0.6);
 
 #hero p {
   color:whitesmoke;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.6;
   font-family: "Poppins", sans-serif;
   text-align: left;
-  font-weight: 300;
+  font-weight: 400;
 }
 
  /* hero1 */
@@ -844,7 +844,7 @@ background: rgba(12, 11, 9, 0.6);
 
 #hero .btns {
   margin-top: 50px;
-  text-align: left;
+  text-align: center;
   
 }
 
@@ -913,20 +913,29 @@ background: rgba(12, 11, 9, 0.6);
   }
 
   #hero .container {
-    padding-top: 130px;
+    padding-top: 135px;
     padding-bottom: 60px;
   }
 }
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
   }
 
   #hero h2 {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
+  }
+
+  #hero p{
+    font-size:15px;
+  }
+
+  #hero img{
+    width: 100px;
+    height: auto;
   }
 }
 

@@ -807,6 +807,33 @@ background: rgba(12, 11, 9, 0.6);
   }
 }
 
+@media screen and (max-width: 768px) {
+  #hero1 .container {
+    padding-top: 10px;
+  }
+
+  #hero1 .about-img1{
+    width:50%;
+    height:auto;
+  }
+
+  #hero1 .container h1{
+    font-size: 25px;
+  }
+
+  #hero1 .container p{
+    font-size: 15px;
+  }
+
+  #hero1 .content .about-img1{
+    padding-left: 50px;
+    padding-right: 30px;
+    width:300px;
+    height: auto;
+  }
+
+}
+
 #hero1 h1 {
   margin: 0;
   font-size: 40x;
@@ -2293,6 +2320,15 @@ section {
   height: auto;
 }
 
+.career .c1 {
+  background-color: rgba(255, 255, 255, 0.363); 
+  padding-left: 50px; 
+  padding-right: 50px; 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  border-radius: 20px;
+}
+
 .career .team-details h3 {
   text-align: center;
   font-family:"Poppins", sans-serif;
@@ -2322,6 +2358,47 @@ section {
 .arrow-list .bi-arrow-right-square-fill {
   color: rgb(145, 248, 167);
 }
+
+@media (max-width: 992px) {
+  .row .g-0{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-lg-6 {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row .g-0{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-lg-6 {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .career .team-details {
+    font-size: 10px;
+  }
+
+  .career .c1 {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+  }
+  
+}
+/* ==================
+    OVERDENTURE
+================== */
 
 .overdenture {
    background: url("../img/od-bg.png") ;
@@ -2354,14 +2431,26 @@ section {
   padding-right: 10px;
 }
 
-.overdenture .arrow .bi-arrow-right-square-fill {
-  color: #6EDD04;
+@media screen and (max-width: 768px) {
+  .overdenture h2 {
+    font-size: 30px;
+  }
+  
+  .overdenture p {
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
-.overdenture .arrow a {
+/* .overdenture .arrow .bi-arrow-right-square-fill {
+  color: #6EDD04;
+} */
+
+/* .overdenture .arrow a {
   color: white;
   font-size: 18px;
-}
+} */
 
 .overdenture .tab {
   box-sizing: border-box;
@@ -2403,8 +2492,78 @@ section {
   cursor: pointer;
 }
 
+.overdenture .o1{
+  background: white;
+  height: 200px;
+  text-align: center;
+  padding-top:10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: 2px solid rgba(206, 196, 196, 0.582);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.overdenture .o1 h3{
+  font-size: 20px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 1px 1px 1px rgba(214, 214, 212, 0.644);
+}
+
+.overdenture .o1:hover {
+  background: rgb(173, 231, 173);
+}
+
+.overdenture .o1 img{
+  width:70px; 
+  height: auto;
+  padding-bottom: 18px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-sm {
+    width: 80%;
+    margin: 10px 0;
+  }
+  
+  .overdenture .o1 {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .overdenture .o1 h3{
+    font-size: 16px;
+  }
+  
+  .overdenture .o1 img{
+    width: 50px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+
+
+.overdenture .od-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================
+END OVERDENTURE
+================ */
+
+
 .abt-facebook {
-  background: url("../img/green-bg.png");
+  background-image: url('../img/green-bg.png');
+  backdrop-filter: blur(10px);
 }
 
 .abt-facebook h2{
@@ -2414,11 +2573,30 @@ section {
   color: yellowgreen;
   font-size: 40px;
   text-shadow: 1px 1px 1px #dbd9d92d;
-
+  animation: glow 3s ease-in-out infinite;
 }
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #767c70, 0 0 20px #91978b, 0 0 30px #5c5f59;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(153, 205, 50, 0.644), 0 0 20px rgba(153, 205, 50, 0.575), 0 0 30px #6EDD04;
+  }
+}
+
 
 .abt-facebook .fb-page{
   border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .abt-facebook h2 {
+    font-size: 20px;
+  }
 }
 
 

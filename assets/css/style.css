@@ -235,6 +235,79 @@ background: rgba(12, 11, 9, 0.6);
 /*--------------------------------------------------------------
 # Carousel
 --------------------------------------------------------------*/
+.carousel-item {
+  position: relative;
+}
+
+.carousel-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-caption1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 1px 1px 1px #131212;
+  text-align: center;
+}
+
+
+.carousel-caption1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.carousel-caption1 span {
+   color: yellowgreen;
+}
+
+.carousel-caption1 h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  line-height: 1.6;
+  text-shadow: 0 0 5px #2f523c, 0 0 10px #2b2a2a, 0 0 15px #2c572e;
+ 
+}
+
+.carousel-caption1 .logo {
+  display: inline-block;
+  max-width: 40%;
+  margin-left: 1rem;
+}
+
+.carousel-caption1 .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption1 h1 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-caption1 span {
+    font-size: 2rem;
+  }
+  
+  .carousel-caption1 p {
+    font-size: 1rem;
+  }
+  
+  .carousel-caption1 .logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}
 
 
 .carousel-item {
@@ -243,32 +316,163 @@ background: rgba(12, 11, 9, 0.6);
   height: 100vh;
 }
 
+.carousel-caption .btns {
+    margin-top: 50px;
+    text-align:left;
+    
+}
+
+.carousel .btn-menu {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: whitesmoke;
+  border: 2px solid greenyellow;
+}
+
+.carousel .btn-menu:hover {
+  background: rgba(153, 205, 50, 0.712);
+  color: #fff;
+}
+
+/* .carousel-item img {
+  max-width: 100%;
+  height: auto;
+} */
+
+  /* .carousel-caption1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .column1 {
+    flex: 1;
+    padding-left: 250px; 
+  }
+  
+  .column2 {
+    flex: 0 0 30%;
+    padding-left: 100px;
+  }
+
+
+@media (max-width: 768px) {
+  .column1 {
+    flex: 1;
+    padding-left: 0; 
+    text-align: center; 
+  }
+
+  .column2 {
+    flex: 0 0 100%;
+    padding-left: 0; 
+    margin-top: 20px; 
+  }
+
+  .carousel-caption1 h1 {
+    font-size: 28px; /* reduce font size */
+  /* }
+
+  .carousel-caption1 h1 span {
+    font-size: 32px; /* reduce font size */
+  /* }
+
+  .carousel-caption1 p {
+    font-size: 16px; /* reduce font size */
+  /* }
+}  */
+
+
+  /* .carousel-caption1 h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .carousel-caption1 h1 span {
+    font-size: 40px;
+    color: yellowgreen;
+  }
+  
+  
+  .carousel-caption1 p {
+    font-size: 18px;
+  } */
+  
+
 .carousel-caption {
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
   text-align: left;
   color: #fff;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #131212;
 }
 
 .carousel-caption h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: bold;
 }
 
 .carousel-caption h1 span {
-  font-family: "Poppins", sans-serif;
   font-size: 40px;
-  font-weight: bold;
   color: yellowgreen;
 }
 
+/* For screens smaller than 576px (mobile devices) */
+@media (max-width: 576px) {
+  .carousel-caption h1 {
+    font-size: 24px;
+  }
+  
+  .carousel-caption h1 span {
+    font-size: 28px;
+  }
 
-.carousel-caption p {
-  font-size: 18px;
 }
+
+.carousel-img {
+  background: url("../img/green-bg.png");
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-img1 {
+  background: url("../img/carousel3.png");
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.8; /* set opacity level to 70% */
+  backdrop-filter: blur(5px); /* apply a 5-pixel blur effect */
+}
+
+.carousel-img2 {
+  background: url("../img/green-bg.png");
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Book a table button Menu
@@ -553,7 +757,7 @@ background: rgba(12, 11, 9, 0.6);
   line-height: 56px;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  text-align:left;
+  text-align: left;
 }
 
 #hero h1 span {
@@ -563,11 +767,11 @@ background: rgba(12, 11, 9, 0.6);
 
 #hero p {
   color:whitesmoke;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.6;
   font-family: "Poppins", sans-serif;
   text-align: left;
-  font-weight: 300;
+  font-weight: 400;
 }
 
  /* hero1 */
@@ -577,7 +781,7 @@ background: rgba(12, 11, 9, 0.6);
 #hero1 {
   width: 100%;
   height: 80vh;
-  background: url("../img/images.jpg") top center;
+  background: url("../img/green-bg.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -603,14 +807,42 @@ background: rgba(12, 11, 9, 0.6);
   }
 }
 
+@media screen and (max-width: 768px) {
+  #hero1 .container {
+    padding-top: 10px;
+  }
+
+  #hero1 .about-img1{
+    width:50%;
+    height:auto;
+  }
+
+  #hero1 .container h1{
+    font-size: 25px;
+  }
+
+  #hero1 .container p{
+    font-size: 15px;
+  }
+
+  #hero1 .content .about-img1{
+    padding-left: 50px;
+    padding-right: 30px;
+    width:300px;
+    height: auto;
+  }
+
+}
+
 #hero1 h1 {
   margin: 0;
-  font-size: 60x;
-  font-weight: 600;
+  font-size: 40x;
+  font-weight: 500;
   line-height: 56px;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  text-align:left;
+  text-align:center;
+  list-style: 1.2;
 }
 
 #hero1 h1 span {
@@ -639,7 +871,7 @@ background: rgba(12, 11, 9, 0.6);
 
 #hero .btns {
   margin-top: 50px;
-  text-align: left;
+  text-align: center;
   
 }
 
@@ -708,20 +940,29 @@ background: rgba(12, 11, 9, 0.6);
   }
 
   #hero .container {
-    padding-top: 130px;
+    padding-top: 135px;
     padding-bottom: 60px;
   }
 }
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
   }
 
   #hero h2 {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
+  }
+
+  #hero p{
+    font-size:15px;
+  }
+
+  #hero img{
+    width: 100px;
+    height: auto;
   }
 }
 
@@ -1246,7 +1487,7 @@ section {
   transition: 0.3s;
   color: #fff;
   border-radius: 0;
-  border-right: 2px solid #f3f3f3;
+  /* border-right: 2px solid #f3f3f3; */
   font-weight: 600;
   font-size: 15px;
 }
@@ -1932,7 +2173,7 @@ section {
 }
 
 #footer .footer-top .footer-links h4 {
-  color: 5eef01
+  color: 5eef01;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   
@@ -2079,6 +2320,15 @@ section {
   height: auto;
 }
 
+.career .c1 {
+  background-color: rgba(255, 255, 255, 0.363); 
+  padding-left: 50px; 
+  padding-right: 50px; 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  border-radius: 20px;
+}
+
 .career .team-details h3 {
   text-align: center;
   font-family:"Poppins", sans-serif;
@@ -2108,6 +2358,47 @@ section {
 .arrow-list .bi-arrow-right-square-fill {
   color: rgb(145, 248, 167);
 }
+
+@media (max-width: 992px) {
+  .row .g-0{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-lg-6 {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row .g-0{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-lg-6 {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .career .team-details {
+    font-size: 10px;
+  }
+
+  .career .c1 {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+  }
+  
+}
+/* ==================
+    OVERDENTURE
+================== */
 
 .overdenture {
    background: url("../img/od-bg.png") ;
@@ -2140,14 +2431,26 @@ section {
   padding-right: 10px;
 }
 
-.overdenture .arrow .bi-arrow-right-square-fill {
-  color: #6EDD04;
+@media screen and (max-width: 768px) {
+  .overdenture h2 {
+    font-size: 30px;
+  }
+  
+  .overdenture p {
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
-.overdenture .arrow a {
+/* .overdenture .arrow .bi-arrow-right-square-fill {
+  color: #6EDD04;
+} */
+
+/* .overdenture .arrow a {
   color: white;
   font-size: 18px;
-}
+} */
 
 .overdenture .tab {
   box-sizing: border-box;
@@ -2189,12 +2492,112 @@ section {
   cursor: pointer;
 }
 
+.overdenture .o1{
+  background: white;
+  height: 200px;
+  text-align: center;
+  padding-top:10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: 2px solid rgba(206, 196, 196, 0.582);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.overdenture .o1 h3{
+  font-size: 20px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 1px 1px 1px rgba(214, 214, 212, 0.644);
+}
+
+.overdenture .o1:hover {
+  background: rgb(173, 231, 173);
+}
+
+.overdenture .o1 img{
+  width:70px; 
+  height: auto;
+  padding-bottom: 18px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-sm {
+    width: 80%;
+    margin: 10px 0;
+  }
+  
+  .overdenture .o1 {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .overdenture .o1 h3{
+    font-size: 16px;
+  }
+  
+  .overdenture .o1 img{
+    width: 50px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
 
 
+.overdenture .od-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================
+END OVERDENTURE
+================ */
 
 
+.abt-facebook {
+  background-image: url('../img/green-bg.png');
+  backdrop-filter: blur(10px);
+}
+
+.abt-facebook h2{
+  padding-top: 30%;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  color: yellowgreen;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px #dbd9d92d;
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #767c70, 0 0 20px #91978b, 0 0 30px #5c5f59;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(153, 205, 50, 0.644), 0 0 20px rgba(153, 205, 50, 0.575), 0 0 30px #6EDD04;
+  }
+}
 
 
+.abt-facebook .fb-page{
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .abt-facebook h2 {
+    font-size: 20px;
+  }
+}
 
 
 

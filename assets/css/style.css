@@ -242,11 +242,98 @@ background: rgba(12, 11, 9, 0.6);
   height: 100vh;
 }
 
+.carousel-caption .btns {
+    margin-top: 50px;
+    text-align:left;
+    
+}
+
+.carousel .btn-menu {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: whitesmoke;
+  border: 2px solid greenyellow;
+}
+
+.carousel .btn-menu:hover {
+  background: rgba(153, 205, 50, 0.712);
+  color: #fff;
+}
+
 /* .carousel-item img {
   max-width: 100%;
   height: auto;
 } */
 
+  /* .carousel-caption1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .column1 {
+    flex: 1;
+    padding-left: 250px; 
+  }
+  
+  .column2 {
+    flex: 0 0 30%;
+    padding-left: 100px;
+  }
+
+
+@media (max-width: 768px) {
+  .column1 {
+    flex: 1;
+    padding-left: 0; 
+    text-align: center; 
+  }
+
+  .column2 {
+    flex: 0 0 100%;
+    padding-left: 0; 
+    margin-top: 20px; 
+  }
+
+  .carousel-caption1 h1 {
+    font-size: 28px; /* reduce font size */
+  /* }
+
+  .carousel-caption1 h1 span {
+    font-size: 32px; /* reduce font size */
+  /* }
+
+  .carousel-caption1 p {
+    font-size: 16px; /* reduce font size */
+  /* }
+}  */
+
+
+  /* .carousel-caption1 h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .carousel-caption1 h1 span {
+    font-size: 40px;
+    color: yellowgreen;
+  }
+  
+  
+  .carousel-caption1 p {
+    font-size: 18px;
+  } */
+  
 
 .carousel-caption {
   position: absolute;
@@ -254,24 +341,8 @@ background: rgba(12, 11, 9, 0.6);
   transform: translateY(-50%);
   text-align: left;
   color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  /* background: url("../img/try.png");
-  background-position: center;
-  background-size: cover; */
+  text-shadow: 1px 1px 1px #131212;
 }
-
-/* .column1 {
-  flex: 1; 
-}
-
-.column2 {
-  flex: 0 0 30%; 
-  margin-right: 20px; 
-}
-
-.column2 img {
-  max-width: 100%; 
-} */
 
 .carousel-caption h1 {
   font-family: "Poppins", sans-serif;
@@ -314,12 +385,14 @@ background: rgba(12, 11, 9, 0.6);
 }
 
 .carousel-img1 {
-  background: url("../img/abt.bg2.png");
+  background: url("../img/carousel3.png");
   background-size: cover;
   position: relative;
   padding: 0;
   max-width: 100%;
   height: auto;
+  opacity: 0.8; /* set opacity level to 70% */
+  backdrop-filter: blur(5px); /* apply a 5-pixel blur effect */
 }
 
 .carousel-img2 {

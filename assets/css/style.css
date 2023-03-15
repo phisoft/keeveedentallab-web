@@ -1009,6 +1009,7 @@ section {
 
 }
 
+
 .section-title {
   padding-bottom: 40px;
   text-align: center;
@@ -1017,7 +1018,7 @@ section {
 
 .section-title h2 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0;
   line-height: 1px;
   margin: 0 0 5px 0;
@@ -1049,7 +1050,8 @@ section {
   margin: 0;
   margin: 0;
   font-size: 40px;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #6EDD04;
 }
@@ -1679,13 +1681,14 @@ section {
 
 .removable h2 {
   /* font-size: 35px; */
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: #6EDD04;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: center;
   text-shadow: 0 0 10px rgb(10, 9, 9);
+  margin-bottom: 5%;
 }
 
 .removable p {
@@ -1739,14 +1742,14 @@ section {
 
 .removable2 h2 {
   /* font-size: 35px; */
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: #6EDD04;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: center;
-  font-family:"Poppins", sans-serif;
   text-shadow: 0 0 10px rgb(10, 9, 9);
+  margin-bottom: 5%;
 }
 
 .removable2 p {
@@ -1807,15 +1810,15 @@ section {
 }
 
 .removable3 h2 {
-  /* font-size: 35px; */
-  font-size: 40px;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  color: #6EDD04;
-  font-weight: bold;
-  text-align: center;
-  font-family:"Poppins", sans-serif;
-  text-shadow: 0 0 10px rgb(10, 9, 9);
+   /* font-size: 35px; */
+   font-size: 38px;
+   font-weight: 500;
+   font-family: "Poppins", sans-serif;
+   color: #6EDD04;
+   /* font-weight: bold; */
+   text-align: center;
+   text-shadow: 0 0 10px rgb(10, 9, 9);
+   margin-bottom: 5%;
 }
 
 .removable3 p {
@@ -1866,15 +1869,15 @@ section {
 }
 
 .removable4 h2 {
-  /* font-size: 35px; */
-  font-size: 40px;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  color: #6EDD04;
-  font-weight: bold;
-  text-align: center;
-  font-family:"Poppins", sans-serif;
-  text-shadow: 0 0 10px rgb(10, 9, 9);
+    /* font-size: 35px; */
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #6EDD04;
+    /* font-weight: bold; */
+    text-align: center;
+    text-shadow: 0 0 10px rgb(10, 9, 9);
+    margin-bottom: 5%;
 }
 
 .removable4 p {
@@ -1935,15 +1938,15 @@ section {
 }
 
 .removable5 h2 {
-  /* font-size: 35px; */
-  font-size: 40px;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  color: #6EDD04;
-  font-weight: bold;
-  text-align: center;
-  font-family:"Poppins", sans-serif;
-  text-shadow: 0 0 10px rgb(10, 9, 9);
+    /* font-size: 35px; */
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #6EDD04;
+    /* font-weight: bold; */
+    text-align: center;
+    text-shadow: 0 0 10px rgb(10, 9, 9);
+    margin-bottom: 5%;
 }
 
 .removable5 p {
@@ -2796,7 +2799,7 @@ max-height: 100%;
 }
 
 .team-n {
-  background: url("../img/try.png");
+  background: url("../img/green1-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -2850,8 +2853,6 @@ max-height: 100%;
 }
 
 
-
-
 /* ==================
     OVERDENTURE
 ================== */
@@ -2869,12 +2870,14 @@ max-height: 100%;
 }
 
 .overdenture h2 {
-  font-size: 35px;
-  font-weight: bold;
-  color: rgba(153, 205, 50, 0.781);
+  font-size: 38px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #6EDD04;
+  /* font-weight: bold; */
   text-align: center;
-  font-family:"Poppins", sans-serif;
   text-shadow: 0 0 10px rgb(10, 9, 9);
+  margin-bottom: 5%;
 }
 
 .overdenture p {
@@ -2898,15 +2901,6 @@ max-height: 100%;
     padding-right: 5px;
   }
 }
-
-/* .overdenture .arrow .bi-arrow-right-square-fill {
-  color: #6EDD04;
-} */
-
-/* .overdenture .arrow a {
-  color: white;
-  font-size: 18px;
-} */
 
 .overdenture .tab {
   box-sizing: border-box;
@@ -3016,10 +3010,29 @@ max-height: 100%;
 END OVERDENTURE
 ================ */
 
-
 .abt-facebook {
-  background-image: url('../img/green-bg.png');
-  backdrop-filter: blur(10px);
+  background: url("../img/abt.bg2.png");
+  background-size: cover;
+  position: relative;
+  border: 2px;
+  backdrop-filter: blur(5px);
+}
+
+
+.abt-facebook::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .abt-facebook {
+    background-attachment: fixed;
+  }
 }
 
 .abt-facebook h2{
@@ -3028,20 +3041,7 @@ END OVERDENTURE
   font-family: "Poppins", sans-serif;
   color: yellowgreen;
   font-size: 40px;
-  text-shadow: 1px 1px 1px #dbd9d92d;
-  animation: glow 3s ease-in-out infinite;
-}
-
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 10px #767c70, 0 0 20px #91978b, 0 0 30px #5c5f59;
-  }
-  50% {
-    text-shadow: none;
-  }
-  100% {
-    text-shadow: 0 0 10px rgba(153, 205, 50, 0.644), 0 0 20px rgba(153, 205, 50, 0.575), 0 0 30px #6EDD04;
-  }
+  text-shadow: 1px 1px 1px #a1a0a02d;
 }
 
 
@@ -3053,16 +3053,6 @@ END OVERDENTURE
   .abt-facebook h2 {
     font-size: 20px;
   }
-}
-
-/* From https://css.glass */
-.glass {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 

@@ -1022,7 +1022,7 @@ section {
 
 .section-title {
   /* padding-bottom: 40px; */
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: center;
   
 }
@@ -1156,6 +1156,43 @@ section {
   font-family: "Poppins", sans-serif;
   text-align:center;
 }
+
+.quotes{
+  background: url("../img/gif-bg.gif");
+  background-size: cover;
+  position: relative;
+  border: 2px;
+  backdrop-filter: blur(5px);
+  height: 40vh;
+}
+
+
+.quotes::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .quotes {
+    background-attachment: fixed;
+  }
+}
+
+.quotes p {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: yellowgreen;
+  margin-top: 10%;
+  font-weight: 600;
+}
+
+
 
 
 /*--------------------------------------------------------------

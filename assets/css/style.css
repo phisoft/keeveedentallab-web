@@ -99,12 +99,130 @@ h6 {
 }
 
 
+/* ==================================
+          BACKGROUND-IMG
+=================================== */
+
 .team {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/green1-bg.png") no-repeat top center;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent),
+  url("../img/background.png");
+  background-position: center center;
   background-size: cover;
   height: 40vh;
-
+  position: relative;
 }
+
+.team::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.bg{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent),
+  url("../img/bg-team.png");
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+}
+
+.bg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.service-{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+  url("../img/service-bg.png");
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+}
+
+.service-::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.remove{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent),
+  url("../img/removable-bg.png");
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+}
+
+.remove::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.page{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent),
+  url("../img/od-bg2.png");
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.contact-sec{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent),
+  url("../img/contact-us.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+}
+
+.contact-sec::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
 
 
 
@@ -207,8 +325,8 @@ h6 {
 background: rgba(12, 11, 9, 0.6);
 --------------------------------------------------------------*/
 #header {
-  background: rgba(12, 11, 9, 0.6);
-  border-bottom: 1px solid rgba(36, 36, 36, 0.6);
+  /* background: rgba(12, 11, 9, 0.6); */
+  /* border-bottom: 1px solid rgba(36, 36, 36, 0.6); */
   transition: all 0.5s;
   z-index: 997;
   top: 5px;
@@ -451,7 +569,7 @@ background: rgba(12, 11, 9, 0.6);
 }
 
 .carousel-img {
-  background: url("../img/green-bg.png");
+  background: url("../img/background/green-bg.png");
   background-size: cover;
   position: relative;
   padding: 0;
@@ -471,7 +589,7 @@ background: rgba(12, 11, 9, 0.6);
 }
 
 .carousel-img2 {
-  background: url("../img/gif-bg.gif");
+  background: url("../img/background/gif-bg.gif");
   background-size: cover;
   position: relative;
   padding: 0;
@@ -625,7 +743,7 @@ background: rgba(12, 11, 9, 0.6);
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: yellowgreen;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -670,7 +788,8 @@ background: rgba(12, 11, 9, 0.6);
   left: 15px;
   padding: 10px 0;
   border-radius: 6px;
-  background-color: #fff;
+  color: black;
+  background-color: #ffffff;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -685,7 +804,7 @@ background: rgba(12, 11, 9, 0.6);
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: 5eef01;
+  color: yellowgreen;
 }
 
 .navbar-mobile .getstarted,
@@ -699,9 +818,10 @@ background: rgba(12, 11, 9, 0.6);
   margin: 10px 20px;
   padding: 10px 0;
   z-index: 99;
-  opacity: 1;
-  visibility: visible;
+  opacity: 5;
+  /* visibility: visible; */
   background: #fff;
+  color: black;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -720,8 +840,13 @@ background: rgba(12, 11, 9, 0.6);
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: 5eef01;
+  color: yellowgreen;
 }
+
+.navbar-mobile .dropdown:hover ul {
+  display: block;
+}
+
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
@@ -733,7 +858,7 @@ background: rgba(12, 11, 9, 0.6);
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/green-bg.png") top center;
+  background: url("../img/background/green-bg.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -797,7 +922,7 @@ background: rgba(12, 11, 9, 0.6);
 #hero1 {
   width: 100%;
   height: 80vh;
-  background: url("../img/green-bg.png") top center;
+  background: url("../img/background/green-bg.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -842,8 +967,9 @@ background: rgba(12, 11, 9, 0.6);
   }
 
   #hero1 .content .about-img1{
-    padding-left: 50px;
-    padding-right: 30px;
+    /* padding-left: 50px;
+    padding-right: 30px; */
+    margin-left: 16%;
     width:300px;
     height: auto;
   }
@@ -1024,7 +1150,13 @@ section {
   /* padding-bottom: 40px; */
   margin-top: 5%;
   text-align: center;
-  
+}
+  /* adjust padding for small screens */
+@media screen and (max-width: 768px) {
+  .section-title {
+    margin-top: 20%;
+    text-align: center;
+  }
 }
 
 .section-title h2 {
@@ -1158,7 +1290,7 @@ section {
 }
 
 .quotes{
-  background: url("../img/gif-bg.gif");
+  background: url("../img/background/gif-bg.gif");
   background-size: cover;
   position: relative;
   border: 2px;
@@ -1192,6 +1324,17 @@ section {
   font-weight: 600;
 }
 
+@media (max-width: 767px) {
+  .quotes p {
+    font-size: 20px;
+    margin-top: 5%;
+  }
+
+  .blockquote-footer {
+    font-size: 12px;
+    
+  }
+}
 
 
 
@@ -1253,7 +1396,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/green-bg.png");
+  background: url("../img/background/green-bg.png");
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1594,9 +1737,10 @@ section {
 
 #s1 {
   max-height: fit-content;
-  background: url("../img/try.png") top center;
+  background: url("../img/background/green-bg.png") top center;
   background-size: cover;
   position: relative;
+  height: 80vh;
 }
 
 #s1 h1 {
@@ -1611,7 +1755,7 @@ section {
 
 #s1 h4 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -1647,7 +1791,7 @@ section {
 
 #s2 {
   max-height: fit-content;
-  background: url("../img/try.png") top center;
+  background: url("../img/background/green1-bg.png") top center;
   background-size: cover;
   position: relative;
 }
@@ -1664,7 +1808,7 @@ section {
 
 #s2 h4 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -1699,7 +1843,7 @@ section {
 
 
 .removable{
-  background: url("../img/green-bg.png");
+  background: url("../img/background/green-bg.png");
   background-size: cover;
   position: relative;
   border: 2px;
@@ -1749,8 +1893,30 @@ section {
   padding-right: 10px;
 }
 
+/* adjust padding for small screens */
+@media screen and (max-width: 768px) {
+  .removable .cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* adjust font size and line height for small screens */
+@media screen and (max-width: 576px) {
+  .removable h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  
+  .removable p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
 .removable #demo{
-  max-width: 70%; /* set maximum width */
+       max-width: 70%; /* set maximum width */
       max-height: fit-content;
       margin: 0 auto;
 }
@@ -1760,8 +1926,38 @@ section {
   object-fit: cover;
 }
 
+@media (max-width: 767px) {
+  .removable #demo {
+    max-width: 100%; /* set full width for small screens */
+    max-height: 40%; /* remove height restriction */
+  }
+  
+  .removable .carousel-inner img {
+    width: 50%;
+    height: auto; /* allow images to scale with width */
+    object-fit: contain; /* change object-fit to contain */
+  }
+}
+
+  @media (max-width: 1024px) {
+
+    .removable #demo {
+      max-width: 100%; /* set full width for small screens */
+      max-height: 40%; /* remove height restriction */
+    }
+    
+    .removable .carousel-inner img {
+      width: 50%;
+      height: auto; /* allow images to scale with width */
+      object-fit: contain; /* change object-fit to contain */
+    }
+
+  }
+  
+
+
 .removable2{
-  background: url("../img/green1-bg.png");
+  background: url("../img/background/green1-bg.png");
   background-size: cover;
   position: relative;
   border: 2px;
@@ -1810,6 +2006,28 @@ section {
   padding-right: 10px;
 }
 
+/* adjust padding for small screens */
+@media screen and (max-width: 768px) {
+  .removable2 .cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* adjust font size and line height for small screens */
+@media screen and (max-width: 576px) {
+  .removable2 h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  
+  .removable2 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
 .removable2 .row .r1 {
   display: flex;
   flex-wrap: wrap;
@@ -1826,10 +2044,32 @@ section {
   height: 80%;
   border-radius: 5px;
   /* background-color: rgba(255, 255, 255, 0.034); */
+  transition: transform 0.2s ease-in-out;
 }
 
+.removable2 .column img:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 767px) {
+  .removable2 .column img {
+  max-width: 50%;
+  height: auto;
+  }
+  }
+
+@media (max-width: 1024px) {
+  .removable2 .column img {
+    max-width: 30%;
+    height: auto;
+    }
+
+  }
+  
+
 .removable3{
-  background: url("../img/green-bg.png");
+  background: url("../img/background/green-bg.png");
   background-size: cover;
   position: relative;
   border: 2px;
@@ -1879,17 +2119,54 @@ section {
   padding-right: 10px;
 }
 
+/* adjust padding for small screens */
+@media screen and (max-width: 768px) {
+  .removable3 .cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* adjust font size and line height for small screens */
+@media screen and (max-width: 576px) {
+  .removable3 h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  
+  .removable3 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
 .removable3 .r3 {
   text-align: center;
 
 }
 
 .removable3 .r3 img{
+  margin-top: 5%;
   border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
 }
 
+.removable3 .r3 img:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 767px) {
+.removable3 .r3 img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+
 .removable4{
-  background: url("../img/green1-bg.png");
+  background: url("../img/background/green1-bg.png");
   background-size: cover;
   position: relative;
   border: 2px;
@@ -1938,6 +2215,28 @@ section {
   padding-right: 10px;
 }
 
+/* adjust padding for small screens */
+@media screen and (max-width: 768px) {
+  .removable4 .cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* adjust font size and line height for small screens */
+@media screen and (max-width: 576px) {
+  .removable4 h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  
+  .removable4 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
 .removable4 .row .r1 {
   display: flex;
   flex-wrap: wrap;
@@ -1954,15 +2253,38 @@ section {
   height: 80%;
   border-radius: 5px;
   /* background-color: rgba(255, 255, 255, 0.034); */
+  transition: transform 0.2s ease-in-out;
 }
 
+.removable4 .column img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+.removable4 .column img {
+  max-width: 50%;
+  height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .removable4 .column img {
+    max-width: 35%;
+    height: auto;
+    }
+
+  }
+
+
 .removable5{
-  background: url("../img/green-bg.png");
+  background: url("../img/background/green-bg.png");
   background-size: cover;
   position: relative;
   border: 2px;
  
 }
+
+
 
 .removable5::before {
   content: "";
@@ -2007,6 +2329,28 @@ section {
   padding-right: 10px;
 }
 
+/* adjust padding for small screens */
+@media screen and (max-width: 768px) {
+  .removable5 .cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* adjust font size and line height for small screens */
+@media screen and (max-width: 576px) {
+  .removable5 h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  
+  .removable5 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
 .removable5 #demo1{
   max-width: 70%; /* set maximum width */
       max-height: 70%;
@@ -2018,12 +2362,42 @@ section {
   object-fit: cover;
 }
 
+@media (max-width: 767px) {
+  .removable5 #demo1 {
+    max-width: 100%; /* set full width for small screens */
+    max-height: 30%; /* remove height restriction */
+  }
+  
+  .removable5 .carousel-inner img {
+    width: 60%;
+    height: auto; /* allow images to scale with width */
+    object-fit: contain; /* change object-fit to contain */
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .removable5 #demo1 {
+    max-width: 100%; /* set full width for small screens */
+    max-height: 40%; /* remove height restriction */
+  }
+  
+  .removable5 .carousel-inner img {
+    width: 50%;
+    height: auto; /* allow images to scale with width */
+    object-fit: contain; /* change object-fit to contain */
+  }
+
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url("../img/green-bg.png");
+  background: url("../img/background/green-bg.png");
   background-size: cover;
   position: relative;
   border: 2px;
@@ -2202,8 +2576,24 @@ section {
 # Gallery
 --------------------------------------------------------------*/
 .gallery {
-  background: url("../img/green1-bg.png");
+  background: url("../img/background/green-bg.png");
   background-size: cover;
+}
+
+.gallery::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    background-attachment: fixed;
+  }
 }
 
 .gallery .gallery-item {
@@ -2228,6 +2618,18 @@ section {
   color: yellowgreen;
   font-size: 40px;
   text-shadow: 1px 1px 1px #a1a0a02d;
+}
+
+@media (max-width: 576px) {
+  .gallery .section-title-gallery  p{
+   font-size: 30px;
+  }
+
+  .gallery .gallery-item img {
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+  }
 }
 
 
@@ -2331,9 +2733,9 @@ page-banner {
 # Contact
 --------------------------------------------------------------*/
 .contact{
-  background: url("../img/green-bg.png") center center no-repeat;
+  background: url("../img/background/green-bg.png") center center no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 
@@ -2465,6 +2867,27 @@ page-banner {
 
 .contact .php-email-form input {
   height: 44px;
+}
+
+/* CSS for mobile screens */
+@media (max-width: 767px) {
+  .contact .php-email-form .form-group {
+    padding-bottom: 4px;
+  }
+  
+  .contact .php-email-form input {
+    height: 36px;
+    margin-bottom: 8px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+  }
+  
+  .contact .php-email-form button[type=submit] {
+    padding: 8px 20px;
+  }
 }
 
 .contact .php-email-form textarea {
@@ -2773,7 +3196,7 @@ page-banner {
 
 
 .career {
-  background: url("../img/try.png");
+  background: url("../img/background/green1-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -2792,6 +3215,22 @@ max-height: 100%;
   padding-bottom: 20px; 
   /* border-radius: 20px; */
 }
+
+ /* .career .team-img {
+  text-align: center;
+  height: 300px;
+} */
+
+.career  .team-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  margin-left: 35%;
+}
+
+
+
 
 .career .team-details h3 {
   text-align: center;
@@ -2814,9 +3253,15 @@ max-height: 100%;
   height:max-content;
 }
 
+.career-innerW{
+  background: #191a19a9;
+  border-radius: 3px;
+  box-shadow: 5px 5px rgba(153, 205, 50, 0.452);
+}
+
 .career-innerW:hover {
-  background: #527752;
-  border-radius: 20px;
+  background: #344d34a9;
+  border-radius: 5px;
 }
 
 .arrow-list .bi-arrow-right-square-fill {
@@ -2849,12 +3294,12 @@ max-height: 100%;
   }
 
   .career .team-details {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .career .c1 {
-    padding-left: 20px; 
-    padding-right: 20px; 
+    padding-left: 5px; 
+    padding-right: 5px; 
     padding-top: 10px; 
     padding-bottom: 10px; 
   }
@@ -2862,10 +3307,15 @@ max-height: 100%;
 }
 
 .team-n {
-  background: url("../img/green1-bg.png");
+  background: url("../img/background/green1-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
+}
+
+.team-n .cf{
+  padding-left:3%;
+  padding-right:3%;
 }
 
 .team-n .row {
@@ -2896,6 +3346,32 @@ max-height: 100%;
   margin-top: -10%
 }
 
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+  .team-n .card-img-top {
+    width: 150px;
+    height: 150px;
+    margin-left: 25%;
+    margin-top: -8%;
+  }
+  
+  .team-n .card-img-top1 {
+    width: 150px;
+    height: 150px;
+    margin-left: 28%;
+    margin-top: -8%;
+  }
+
+  .team-n .card-body h5 {
+    font-size: 10px;
+    text-shadow: 0 0 10px rgb(20, 20, 20);
+   }
+   
+   .team-n .card-body p {
+     font-size: 8px;
+    }
+}
+
 
 .team-n .card-body {
   color: white;
@@ -2921,7 +3397,7 @@ max-height: 100%;
 ================== */
 
 .overdenture {
-   background: url("../img/od-bg.png") ;
+   background: url("../img/background/green1-bg.png") ;
    background-repeat: no-repeat;
    background-size: cover;
    height: auto; /* or height: 100%; */
@@ -3074,7 +3550,7 @@ END OVERDENTURE
 ================ */
 
 .abt-facebook {
-  background: url("../img/gif-bg.gif");
+  background: url("../img/background/gif-bg.gif");
   background-size: cover;
   position: relative;
   border: 2px;
@@ -3114,9 +3590,22 @@ END OVERDENTURE
 }
 
 @media screen and (max-width: 768px) {
-  .abt-facebook h2 {
-    font-size: 20px;
+  .abt-facebook {
+    height: 90vh;
   }
+
+  .abt-facebook h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 15%;
+    padding-top: 5%;
+    
+  }
+
+  .abt-facebook .fb-page {
+    margin-left: 12%;
+  }
+
 }
 
 

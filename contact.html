@@ -133,33 +133,24 @@
       </div>
 
       <div class="col-lg-8 mt-5 mt-lg-0">
-
-        <!-- <div class="fb-page" data-href="https://web.facebook.com/keeveedentallabpremium/?_rdc=1&amp;_rdr" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/keeveedentallabpremium/?_rdc=1&amp;_rdr" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/keeveedentallabpremium/?_rdc=1&amp;_rdr">Kee Vee Dental Laboratory Sdn.Bhd-Premium</a></blockquote></div> -->
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="clinic" id="clinic" placeholder="Clinic" required>
-            </div>
-            <div class="form-group mt-3">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email: email@example.com" required>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="phone" id="phone" placeholder="Contact Number" required>
-          </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="inquiries" id="inquiries" rows="8" placeholder="Inquiries" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
+        <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
+          <h2 class="sent-notification"> </h2>
+          <form id="myForm">
+          <h2>TRYING TO SEND</h2>
+    
+          <label>NAME</label>
+          <input type="text" name="name"  id="name" placeholder="Your Name" required><br></br>
+          <label>CLINIC</label>
+          <input type="text"name="clinic" id="clinic" placeholder="Clinic" required><br></br>
+          <label>EMAIL</label>
+          <input type="email"  name="email" id="email" placeholder="Your Email: email@example.com" required><br></br>
+          <label>PHONE</label>
+          <input type="text" name="phone" id="phone" placeholder="Your Contact Number" required><br></br>
+          <label>MESSAGE</label>
+          <textarea name="message" id="message" rows="8" placeholder="Message" required></textarea><br></br>
+    
+          <button type="submit" onclick="sendEmail()" value="Send an Email">Send Message</button>
+          </form>
 
       </div>
     
@@ -261,7 +252,54 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+             
+  <script>
+    function sendEmail(){
+    var name = $("#name");
+    var email = $("#email");
+    var clinic = $("#clinic");
+    var phone = $("#phone");
+    var message = $("#message");
+    
+    if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(clinic) && isNotEmpty(phone) && isNotEmpty(message)){
+      $.ajax({
+          url:'contact.php',
+          method: 'POST',
+          dataType: 'json',
+          data:{
+              name: name.val(),
+              email: email.val(),
+              clinic: clinic.val(),
+              phone: phone.val(),
+              message: message.val()
+          }, 
+          success: function(response){
+              $('#myForm')[0].reset();
+              $('.sent-notification').text("Message Sent Succesfully.");
+          }
+      });
+    }
+  }
+
+
+  function isNotEmpty(caller){
+      if(caller.val()==""){
+          caller.css('border','1px solid red');
+          return false;
+      }
+      else
+      {
+          caller.css('border', '');
+          return true;
+      }
+  }
+
+  </script>
+
+
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
 
   <!-- Template Main JS File -->

@@ -994,6 +994,30 @@ background: rgba(12, 11, 9, 0.6);
   #hero1 .container {
     padding-top: 1px;
   }
+
+  #hero1 .about-img1{
+    width:80%;
+    height:auto;
+  }
+
+  #hero1 .container h1{
+    font-size: 25px;
+  }
+
+  #hero1 .container p{
+    font-size: 15px;
+  }
+
+  #hero1 .content .about-img1{
+    /* padding-left: 50px;
+    padding-right: 30px; */
+    /* margin-left: 16%; */
+    margin: 0 0 0 30%;
+    width:300px;
+    height: auto;
+    /* position: absolute; */
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1017,10 +1041,19 @@ background: rgba(12, 11, 9, 0.6);
   #hero1 .content .about-img1{
     /* padding-left: 50px;
     padding-right: 30px; */
-    margin-left: 16%;
+    /* margin-left: 16%; */
+    margin: 0 0 0 10%;
     width:300px;
     height: auto;
+    /* position: absolute; */
   }
+
+  /* #hero1 .about-img1 img {
+    max-width: 80%;
+    border: 10px solid rgba(255, 255, 255, 0.863);
+
+  } */
+  
 }
 
 
@@ -3378,6 +3411,42 @@ max-height: 100%;
     padding-right: 5px; 
     padding-top: 10px; 
     padding-bottom: 10px; 
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  .row .g-0{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-lg-6 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .career .team-details {
+    font-size: 13px;
+  }
+  
+  /* .career .career-innerW {
+    width: 100%;
+  } */
+
+  .career .c1 {
+    /* width: 50%; */
+    padding-left: 5px; 
+    padding-right: 5px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+  }
+
+  .bg .section-title {
+    /* padding-bottom: 40px; */
+    margin-top: 10%;
+    text-align: center;
   }
   
 }

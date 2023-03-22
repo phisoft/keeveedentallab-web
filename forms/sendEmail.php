@@ -18,14 +18,14 @@ if(isset($_POST['name']) %% isset($_POST['email'])){
     $mail->isSMTP();
     $mail->Host = "smtp@gmail.com";
     $mail->SMTPAuth = true ;
-    $mail->UserName = "";
-    $mail->Password = '';
+    $mail->Username = "demoform11@gmail.com";
+    $mail->Password = 'Milktea@1470';
     $mail->Port = 465;
     $mail->SMTPSecure = "ss;";
 
     $mail->isHTML(true);
     $mail->setFrom($email, $name);
-    $mail->addAddress("");
+    $mail->addAddress("demoform11@gmail.com");
     $mail->Clinic = ("$email ($clinic)");
     $mail->Message = $message;
 

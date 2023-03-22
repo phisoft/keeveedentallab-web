@@ -133,32 +133,32 @@
       </div>
 
       <div class="col-lg-8 mt-5 mt-lg-0">
+        <h1 class="sent-notification"> </h1>
 
-        <!-- <div class="fb-page" data-href="https://web.facebook.com/keeveedentallabpremium/?_rdc=1&amp;_rdr" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/keeveedentallabpremium/?_rdc=1&amp;_rdr" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/keeveedentallabpremium/?_rdc=1&amp;_rdr">Kee Vee Dental Laboratory Sdn.Bhd-Premium</a></blockquote></div> -->
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <form id="myForm" method="POST" class="php-email-form">
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
             </div>
             <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="name" id="name" placeholder="Clinic" required>
+              <input type="text" class="form-control" name="clinic" id="clinic" placeholder="Clinic" required>
             </div>
             <div class="form-group mt-3">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email: email@example.com" required>
             </div>
           </div>
           <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Contact Number" required>
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Contact Number" required>
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="8" placeholder="Inquiries" required></textarea>
+            <textarea class="form-control" name="message" id="message" rows="8" placeholder="Inquiries" required></textarea>
           </div>
-          <div class="my-3">
+          <!-- <div class="my-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          </div> -->
+          <div class="text-center"><button type="submit" onclick="sendEmail()" value="Send an Email">Send Message</button></div>
         </form>
 
       </div>
@@ -282,11 +282,14 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- sendEmail() JS File -->
+  <script src="assets/js/form.js"></script>
 
 </body>
 

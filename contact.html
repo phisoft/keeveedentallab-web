@@ -63,11 +63,11 @@
             <ul>
               <li class="dropdown"><a href="#"><span>Removable</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="removable.html#removable">Acrylic Denture</a></li>
-                  <li><a href="removable.html#removable2">Flexible Denture</a></li>
-                  <li><a href="removable.html#removable5">Nightguard </a></li>
-                  <li><a href="removable.html#removable3">Essix Retainer </a></li>
-                  <li><a href="removable.html#removable4">Hawley Retainer </a></li>
+                  <li><a href="removable.html">Acrylic Denture</a></li>
+                  <li><a href="removable.html">Flexible Denture</a></li>
+                  <li><a href="removable.html">Nightguard </a></li>
+                  <li><a href="removable.html">Essix Retainer </a></li>
+                  <li><a href="removable.html">Hawley Retainer </a></li>
                 </ul>
               </li>
               <li><a href="overdenture.html">Overdenture</a></li> 
@@ -80,11 +80,11 @@
     </div>
   </header><!-- End Header -->
 
-<section id="contact-sec" class="contact-sec">
+<section id="team" class="team">
   <div class="container-fluid" data-aos="fade-up">
       <div class="section-title">
         <h2>Contact</h2>
-        <p>Have a Question?</p>
+        <p>Contact Us</p>
       </div>
   </div>
 </section>
@@ -133,30 +133,31 @@
       </div>
 
       <div class="col-lg-8 mt-5 mt-lg-0">
-        <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form"> -->
-          <h2 class="sent-notification"> </h2>
-          <form id="myForm">
-          <h2>TRYING TO SEND</h2>
-    
-          <label>NAME</label>
-          <input type="text" name="name"  id="name" placeholder="Your Name" required><br></br>
-          <label>CLINIC</label>
-          <input type="text"name="clinic" id="clinic" placeholder="Clinic" required><br></br>
-          <label>EMAIL</label>
-          <input type="email"  name="email" id="email" placeholder="Your Email: email@example.com" required><br></br>
-          <label>PHONE</label>
-          <input type="text" name="phone" id="phone" placeholder="Your Contact Number" required><br></br>
-          <label>MESSAGE</label>
-          <textarea name="message" id="message" rows="8" placeholder="Message" required></textarea><br></br>
-    
-          <button type="submit" onclick="sendEmail()" value="Send an Email">Send Message</button>
-          </form>
-
+        <body onload="clearForm()"></body>
+        <form action="mailto:ezwana19@gmail.com?subject=Inquiries%20Kee%20Vee%20Dental%20Website" class="php-email-form" method="POST" enctype="text/plain" target="_blank" id="contact-form" onsubmit="resetForm()">
+          <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="text" class="form-control" name="Clinic" id="clinic" placeholder="Clinic" required/>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email: email@example.com" required>
+                </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="Phone" id="phone" placeholder="Contact Number" required>
+              </div>
+              <div class="form-group mt-3" >
+                <textarea class="form-control" name="Inquiries" rows="8" placeholder="Inquiries" required></textarea>
+              </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </div>
+        </form>
+        
       </div>
-    
 
     </div>
-    
 
   </div>
   <br></br>
@@ -244,7 +245,12 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-
+  <script>
+      function clearForm() {
+    document.getElementById("contact-form").reset();
+    }
+    </script>
+  
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="qhIpkTTN"></script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -252,60 +258,16 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-             
-  <script>
-    function sendEmail(){
-    var name = $("#name");
-    var email = $("#email");
-    var clinic = $("#clinic");
-    var phone = $("#phone");
-    var message = $("#message");
-    
-    if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(clinic) && isNotEmpty(phone) && isNotEmpty(message)){
-      $.ajax({
-          url:'contact.php',
-          method: 'POST',
-          dataType: 'json',
-          data:{
-              name: name.val(),
-              email: email.val(),
-              clinic: clinic.val(),
-              phone: phone.val(),
-              message: message.val()
-          }, 
-          success: function(response){
-              $('#myForm')[0].reset();
-              $('.sent-notification').text("Message Sent Succesfully.");
-          }
-      });
-    }
-  }
-
-
-  function isNotEmpty(caller){
-      if(caller.val()==""){
-          caller.css('border','1px solid red');
-          return false;
-      }
-      else
-      {
-          caller.css('border', '');
-          return true;
-      }
-  }
-
-  </script>
-
-
   <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- sendEmail() JS File -->
+  <!-- <script src="assets/js/form.js"></script> -->
+
+
 </body>
 
 </html>
-

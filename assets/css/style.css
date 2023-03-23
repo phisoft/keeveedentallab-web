@@ -3477,7 +3477,7 @@ max-height: 100%;
 .career .team-details h3 {
   text-align: center;
   font-family:"Poppins", sans-serif;
-  text-shadow: 0 0 10px #6EDD04;
+  text-shadow: 0 0 10px #6ddd04a4;
 }
 
 .career .team-details .team-position {
@@ -3498,7 +3498,7 @@ max-height: 100%;
 .career-innerW{
   background: #191a19a9;
   border-radius: 3px;
-  box-shadow: 5px 5px rgba(153, 205, 50, 0.452);
+  box-shadow: 5px 5px #6ddd0460;
 }
 
 .career-innerW:hover {

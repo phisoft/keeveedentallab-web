@@ -3540,16 +3540,17 @@ max-height: 100%;
 
   .col-lg-6 {
     width: 100%;
-    margin: 10px 0;
+    margin: 1px 0;
   }
 
   .career .team-details {
     font-size: 13px;
   }
   
-  /* .career .career-innerW {
+  .career .career-innerW {
     width: 100%;
-  } */
+    
+  }
 
   .career .c1 {
     /* width: 50%; */
@@ -3576,10 +3577,6 @@ max-height: 100%;
   .career .team-details {
     font-size: 13px;
   }
-  
-  /* .career .career-innerW {
-    width: 100%;
-  } */
 
   .career .c1 {
     /* width: 50%; */

@@ -1114,7 +1114,7 @@ background: rgba(12, 11, 9, 0.6);
 #hero1 p {
   color:whitesmoke;
   font-size: 18px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   text-align: justify;
@@ -3573,7 +3573,7 @@ max-height: 100%;
 
   .bg .section-title {
     /* padding-bottom: 40px; */
-    margin-top: 10%;
+    margin-top: 20%;
     text-align: center;
   }
   
@@ -3908,6 +3908,21 @@ END OVERDENTURE
     margin: 0 0 0 20px;
   } */
 
+}
+
+
+/* ==================================
+          SECTION-TITLE-MOBILE
+=================================== */
+
+@media screen and (max-width: 768px) {
+  .team .section-title p,
+  .service- .section-title p,
+  .bg .section-title p,
+  .page .section-title p,
+  .remove .section-title p{
+    font-size: 32px;
+  }
 }
 
 

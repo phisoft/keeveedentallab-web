@@ -3583,10 +3583,18 @@ max-height: 100%;
   }
   
   .overdenture .o1 img{
-    width: 50px;
+    width: 70px;
     height: auto;
     padding-bottom: 10px;
   }
+
+  .overdenture .tab {
+    box-sizing: border-box;
+    text-align: center;
+    /* padding-left: 0px; */
+    padding: 0 0 0 40px;
+  }
+  
 }
 
 

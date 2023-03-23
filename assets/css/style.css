@@ -1112,9 +1112,9 @@ background: rgba(12, 11, 9, 0.6);
 } */
 
 #hero1 p {
-  color:whitesmoke;
+  color:white;
   font-size: 18px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
   text-align: justify;
@@ -1857,8 +1857,12 @@ section {
   height: 80vh;
 }
 
-#s1 h1 {
+#s1 .top-s1 {
   margin: 0;
+}
+
+#s1 h1 {
+  margin: 0 0 10px 0;
   font-size: 60x;
   font-weight: 600;
   line-height: 56px;
@@ -1903,6 +1907,66 @@ section {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  #s1 {
+  position: relative;
+  height: 80vh;
+  }
+
+  #s1 .top-s1 {
+    padding: 0 30px 10px 30px;
+  }
+  
+#s1 h1 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #6EDD04;
+  font-family: "Poppins", sans-serif;
+  text-align:left;
+  /* margin: 0 20px 0 20px; */
+}
+
+#s1 h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align:left;
+}
+
+#s1 .btn-menu {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  /* line-height: 1; */
+  color: whitesmoke;
+  border: 2px solid greenyellow;
+
+}
+
+#s1 .btn-menu:hover {
+  background: #b2c9bf;
+  color: #fff;
+}
+
+#s1 .img-s1 img{
+  width:70%;
+  height:auto;
+  margin: 0 0 0 60px;
+
+}
+}
+
+
 #s2 {
   max-height: fit-content;
   background: url("../img/background/green1-bg.png") top center;
@@ -1910,8 +1974,12 @@ section {
   position: relative;
 }
 
-#s2 h1 {
+#s2 .top-s2 {
   margin: 0;
+}
+
+#s2 h1 {
+  margin: 0 0 10px 0;
   font-size: 60x;
   font-weight: 600;
   line-height: 56px;
@@ -1954,6 +2022,66 @@ section {
   background: #b2c9bf;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  #s2 {
+  position: relative;
+  height: 80vh;
+  }
+
+  #s2 .top-s2 {
+    padding: 0 30px 10px 30px;
+  }
+  
+#s2 h1 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #6EDD04;
+  font-family: "Poppins", sans-serif;
+  text-align:left;
+  /* margin: 0 20px 0 20px; */
+}
+
+#s2 h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align:left;
+}
+
+#s2 .btn-menu {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  /* line-height: 1; */
+  color: whitesmoke;
+  border: 2px solid greenyellow;
+
+}
+
+#s2 .btn-menu:hover {
+  background: #b2c9bf;
+  color: #fff;
+}
+
+#s2 .img-s2 img{
+  width:70%;
+  height:auto;
+  margin: 0 0 0 60px;
+
+}
+}
+
 
 
 .removable{
@@ -2136,7 +2264,7 @@ section {
   }
   
   .removable2 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }
@@ -2249,7 +2377,7 @@ section {
   }
   
   .removable3 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }
@@ -2345,7 +2473,7 @@ section {
   }
   
   .removable4 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }
@@ -2459,7 +2587,7 @@ section {
   }
   
   .removable5 p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }
@@ -2604,9 +2732,13 @@ section {
   background-color: #070707f5;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 786px) {
   .events  .swiper-slider .event-item {
     padding: 20px 10px 0 10px;
+  }
+
+  .events .event-item p {
+    font-size: 15px;
   }
   .events .event-item .price {
     font-size: 16px;
@@ -2627,6 +2759,10 @@ section {
 
   .events .content img{
    display: none;
+  }
+
+  .events .event-item ul li {
+    font-size: 14px;
   }
 }
 
@@ -3328,7 +3464,7 @@ max-height: 100%;
   height: 300px;
 } */
 
-.career  .team-img {
+.career .team-img {
   border-radius: 50%;
   object-fit: cover;
   width: 200px;
@@ -3336,10 +3472,20 @@ max-height: 100%;
   margin-left: 35%;
 }
 
+@media screen and (max-width: 768px) {
+  .career .team-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  margin-left: 30%;
+  }
+}
+
 .career .team-details h3 {
   text-align: center;
   font-family:"Poppins", sans-serif;
-  text-shadow: 0 0 10px #6EDD04;
+  text-shadow: 0 0 10px #6ddd04a4;
 }
 
 .career .team-details .team-position {
@@ -3360,7 +3506,7 @@ max-height: 100%;
 .career-innerW{
   background: #191a19a9;
   border-radius: 3px;
-  box-shadow: 5px 5px rgba(153, 205, 50, 0.452);
+  box-shadow: 5px 5px #6ddd0460;
 }
 
 .career-innerW:hover {
@@ -3394,16 +3540,17 @@ max-height: 100%;
 
   .col-lg-6 {
     width: 100%;
-    margin: 10px 0;
+    margin: 1px 0;
   }
 
   .career .team-details {
     font-size: 13px;
   }
   
-  /* .career .career-innerW {
+  .career .career-innerW {
     width: 100%;
-  } */
+    
+  }
 
   .career .c1 {
     /* width: 50%; */
@@ -3430,10 +3577,6 @@ max-height: 100%;
   .career .team-details {
     font-size: 13px;
   }
-  
-  /* .career .career-innerW {
-    width: 100%;
-  } */
 
   .career .c1 {
     /* width: 50%; */
@@ -3445,7 +3588,7 @@ max-height: 100%;
 
   .bg .section-title {
     /* padding-bottom: 40px; */
-    margin-top: 10%;
+    margin-top: 20%;
     text-align: center;
   }
   
@@ -3557,6 +3700,19 @@ max-height: 100%;
  background: rgba(76, 148, 117, 0.753);
 }
 
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+
+  .team-n .card-body h5 {
+    font-size: 20px;
+    text-shadow: 0 0 10px rgb(20, 20, 20);
+   }
+   
+   .team-n .card-body p {
+     font-size: 15px;
+    }
+}
+
 
 /* ==================
     OVERDENTURE
@@ -3597,13 +3753,13 @@ max-height: 100%;
 
 @media screen and (max-width: 768px) {
   .overdenture h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
   
   .overdenture p {
-    font-size: 18px;
-    padding-left: 5px;
-    padding-right: 5px;
+    font-size: 16px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
   }
 }
 
@@ -3699,10 +3855,18 @@ max-height: 100%;
   }
   
   .overdenture .o1 img{
-    width: 50px;
+    width: 70px;
     height: auto;
     padding-bottom: 10px;
   }
+
+  .overdenture .tab {
+    box-sizing: border-box;
+    text-align: center;
+    /* padding-left: 0px; */
+    padding: 0 0 0 40px;
+  }
+  
 }
 
 
@@ -3772,6 +3936,21 @@ END OVERDENTURE
     margin: 0 0 0 20px;
   } */
 
+}
+
+
+/* ==================================
+          SECTION-TITLE-MOBILE
+=================================== */
+
+@media screen and (max-width: 768px) {
+  .team .section-title p,
+  .service- .section-title p,
+  .bg .section-title p,
+  .page .section-title p,
+  .remove .section-title p{
+    font-size: 32px;
+  }
 }
 
 

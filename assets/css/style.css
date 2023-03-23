@@ -1112,7 +1112,7 @@ background: rgba(12, 11, 9, 0.6);
 } */
 
 #hero1 p {
-  color:whitesmoke;
+  color:white;
   font-size: 18px;
   /* letter-spacing: 1px; */
   line-height: 1.6;
@@ -2732,9 +2732,13 @@ section {
   background-color: #070707f5;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 786px) {
   .events  .swiper-slider .event-item {
     padding: 20px 10px 0 10px;
+  }
+
+  .events .event-item p {
+    font-size: 15px;
   }
   .events .event-item .price {
     font-size: 16px;
@@ -2755,6 +2759,10 @@ section {
 
   .events .content img{
    display: none;
+  }
+
+  .events .event-item ul li {
+    font-size: 14px;
   }
 }
 
@@ -3693,6 +3701,19 @@ max-height: 100%;
 
 .team-n .card:hover {
  background: rgba(76, 148, 117, 0.753);
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+
+  .team-n .card-body h5 {
+    font-size: 20px;
+    text-shadow: 0 0 10px rgb(20, 20, 20);
+   }
+   
+   .team-n .card-body p {
+     font-size: 15px;
+    }
 }
 
 

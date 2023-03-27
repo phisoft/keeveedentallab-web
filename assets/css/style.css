@@ -1440,13 +1440,16 @@ section {
 
 @media (max-width: 767px) {
   .quotes p {
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 5%;
-    color: red;
+    color: #6EDD04;
+    height: 18vh;
   }
 
   .blockquote-footer {
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 15px;
+    padding-top: 30px;
     
   }
 }

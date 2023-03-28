@@ -402,7 +402,7 @@ background: rgba(12, 11, 9, 0.6);
 }
 
 .carousel-caption1 span {
-   color: yellowgreen;
+   color: #6EDD04;
 }
 
 .carousel-caption1 h2 {
@@ -537,7 +537,7 @@ background: rgba(12, 11, 9, 0.6);
   
   .carousel-caption1 h1 span {
     font-size: 40px;
-    color: yellowgreen;
+    color: #6EDD04;
   }
   
   
@@ -563,7 +563,7 @@ background: rgba(12, 11, 9, 0.6);
 
 .carousel-caption h1 span {
   font-size: 40px;
-  color: yellowgreen;
+  color: #6EDD04;
 }
 
 /* For screens smaller than 576px (mobile devices) */
@@ -756,7 +756,7 @@ background: rgba(12, 11, 9, 0.6);
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: yellowgreen;
+  color: #6EDD04;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -817,7 +817,7 @@ background: rgba(12, 11, 9, 0.6);
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: yellowgreen;
+  color: #6EDD04;
 }
 
 .navbar-mobile .getstarted,
@@ -857,7 +857,7 @@ background: rgba(12, 11, 9, 0.6);
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: yellowgreen;
+  color: #6EDD04;
 }
 
 .navbar-mobile .dropdown:hover ul {
@@ -887,7 +887,7 @@ background: rgba(12, 11, 9, 0.6);
 .navbar-mobile .dropdown ul .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul .dropdown ul li:hover>a{
-  color: yellowgreen;
+  color: #6EDD04;
 }
 
 .navbar-mobile .dropdown:hover ul.dropdown:hover ul {
@@ -924,6 +924,7 @@ background: rgba(12, 11, 9, 0.6);
 
 #hero .container {
   padding-top: 110px;
+  height: 100vh;
 }
 
 @media (max-width: 992px) {
@@ -1404,12 +1405,11 @@ section {
 }
 
 .quotes{
-  background: url("../img/background/gif-bg.gif");
-  background-size: cover;
   position: relative;
   border: 2px;
+  padding-bottom: 60px;
   backdrop-filter: blur(5px);
-  height: 40vh;
+  height: 50vh;
 }
 
 
@@ -1433,24 +1433,26 @@ section {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  color: yellowgreen;
+  color: #6EDD04;
   margin-top: 10%;
   font-weight: 600;
 }
 
 @media (max-width: 767px) {
   .quotes p {
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 5%;
+    color: #6EDD04;
+    height: 18vh;
   }
 
   .blockquote-footer {
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 15px;
+    padding-top: 30px;
     
   }
 }
-
-
 
 /*--------------------------------------------------------------
 # About
@@ -2879,6 +2881,7 @@ section {
 
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
+  height: 35vh;
 }
 
 .gallery .gallery-item:hover img {
@@ -2886,24 +2889,25 @@ section {
 }
 
 .gallery .section-title-gallery  p{
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  color: yellowgreen;
+  color: #6EDD04;
   font-size: 40px;
   text-shadow: 1px 1px 1px #a1a0a02d;
 }
 
 @media (max-width: 576px) {
-  .gallery .section-title-gallery  p{
+  .gallery .section-title-gallery p{
    font-size: 30px;
+   margin-top: 0px;
+   margin-bottom: 50px;
   }
 
   .gallery .gallery-item img {
-    /* margin-left: 10%; */
-    margin: 0 10% 0 10%;
-    width: 80%;
+    margin: 0;
+    width: 100%;
     height: auto;
   }
 }
@@ -3615,13 +3619,11 @@ max-height: 100%;
 }
 
 .team-n .card-img-top {
-  /* background: rgba(255, 255, 255, 0.918); */
   border-radius: 50%;
   object-fit: cover;
   width: 200px;
   height: 200px;
-  margin-left: 35%;
-  margin-top: -10%
+  margin: auto;
 }
 
 .team-n .card-img-top1 {
@@ -3639,8 +3641,7 @@ max-height: 100%;
   .team-n .card-img-top {
     width: 150px;
     height: 150px;
-    /* margin-left: 30%; */
-    margin: -8% 30% 0 30%;
+    margin: auto;
     margin-top: -8%;
   }
   
@@ -3885,7 +3886,7 @@ END OVERDENTURE
   position: relative;
   border: 2px;
   backdrop-filter: blur(5px);
-  height: 60vh;
+  height:65vh;
 }
 
 
@@ -3899,6 +3900,11 @@ END OVERDENTURE
   bottom: 0;
 }
 
+.fb-page {
+  margin-top: -40px;
+  height: 100vh;
+}
+
 @media (min-width: 1024px) {
   .abt-facebook {
     background-attachment: fixed;
@@ -3909,7 +3915,7 @@ END OVERDENTURE
   padding-top: 30%;
   text-align: left;
   font-family: "Poppins", sans-serif;
-  color: yellowgreen;
+  color: #6EDD04;
   font-size: 40px;
   text-shadow: 1px 1px 1px #a1a0a02d;
 }
@@ -3921,16 +3927,28 @@ END OVERDENTURE
 
 @media screen and (max-width: 768px) {
   .abt-facebook {
-   display: none;
+    background-attachment: fixed;
+    height: 80vh;
   }
 
-  /* .abt-facebook h2 {
-    font-size: 25px;
+  .abt-facebook h2 {
+    font-size: 30px;
     text-align: center;
     padding-bottom: 15%;
     padding-top: 5%;
-    
   }
+
+  .fb-page {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .col-sm-5 {
+    margin-right: -50px;
+  }
+
+  /* 
 
   .abt-facebook .fb-page {
     margin: 0 0 0 20px;

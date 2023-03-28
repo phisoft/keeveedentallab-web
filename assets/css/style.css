@@ -2881,6 +2881,7 @@ section {
 
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
+  height: 35vh;
 }
 
 .gallery .gallery-item:hover img {
@@ -2888,8 +2889,8 @@ section {
 }
 
 .gallery .section-title-gallery  p{
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   color: #6EDD04;
@@ -2898,14 +2899,15 @@ section {
 }
 
 @media (max-width: 576px) {
-  .gallery .section-title-gallery  p{
+  .gallery .section-title-gallery p{
    font-size: 30px;
+   margin-top: 0px;
+   margin-bottom: 50px;
   }
 
   .gallery .gallery-item img {
-    /* margin-left: 10%; */
-    margin: 0 10% 0 10%;
-    width: 80%;
+    margin: 0;
+    width: 100%;
     height: auto;
   }
 }
@@ -3617,13 +3619,11 @@ max-height: 100%;
 }
 
 .team-n .card-img-top {
-  /* background: rgba(255, 255, 255, 0.918); */
   border-radius: 50%;
   object-fit: cover;
   width: 200px;
   height: 200px;
-  margin-left: 35%;
-  margin-top: -10%
+  margin: auto;
 }
 
 .team-n .card-img-top1 {
@@ -3641,8 +3641,7 @@ max-height: 100%;
   .team-n .card-img-top {
     width: 150px;
     height: 150px;
-    /* margin-left: 30%; */
-    margin: -8% 30% 0 30%;
+    margin: auto;
     margin-top: -8%;
   }
   
@@ -3887,7 +3886,7 @@ END OVERDENTURE
   position: relative;
   border: 2px;
   backdrop-filter: blur(5px);
-  height: 60vh;
+  height:65vh;
 }
 
 
@@ -3899,6 +3898,11 @@ END OVERDENTURE
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.fb-page {
+  margin-top: -40px;
+  height: 100vh;
 }
 
 @media (min-width: 1024px) {
@@ -3923,16 +3927,28 @@ END OVERDENTURE
 
 @media screen and (max-width: 768px) {
   .abt-facebook {
-   display: none;
+    background-attachment: fixed;
+    height: 80vh;
   }
 
-  /* .abt-facebook h2 {
-    font-size: 25px;
+  .abt-facebook h2 {
+    font-size: 30px;
     text-align: center;
     padding-bottom: 15%;
     padding-top: 5%;
-    
   }
+
+  .fb-page {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .col-sm-5 {
+    margin-right: -50px;
+  }
+
+  /* 
 
   .abt-facebook .fb-page {
     margin: 0 0 0 20px;

@@ -30,6 +30,7 @@ li {
 
 li i {
   margin-right: 10px;
+  align-self: flex-start;
 }
 
 h1,
@@ -568,6 +569,11 @@ background: rgba(12, 11, 9, 0.6);
 
 /* For screens smaller than 576px (mobile devices) */
 @media (max-width: 576px) {
+  .carousel-caption1 {
+    margin-left: 0px;
+    margin-right: -100px;
+  }
+
   .carousel-caption h1 {
     font-size: 24px;
   }
@@ -3441,18 +3447,11 @@ page-banner {
   pointer-events: none; 
 }
 
-
 .career {
   background: url("../img/background/green1-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-}
-
-.career .career-innerW{
-max-height: 100%;
-
-/* background-color: rgba(255, 255, 255, 0.363);  */
 }
 
 .career .c1 {
@@ -3463,27 +3462,15 @@ max-height: 100%;
   /* border-radius: 20px; */
 }
 
- /* .career .team-img {
-  text-align: center;
-  height: 300px;
-} */
 
 .career .team-img {
   border-radius: 50%;
   object-fit: cover;
   width: 200px;
   height: 200px;
-  margin-left: 35%;
-}
-
-@media screen and (max-width: 768px) {
-  .career .team-img {
-  border-radius: 50%;
-  object-fit: cover;
-  width: 100px;
-  height: 100px;
-  margin-left: 30%;
-  }
+  margin-left: 27%;
+  margin-right: 30%;
+  margin-bottom: 20px;
 }
 
 .career .team-details h3 {
@@ -3495,12 +3482,29 @@ max-height: 100%;
 .career .team-details .team-position {
   text-align: center;
   font-family:"Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
+  padding-bottom: 15px;
   border-bottom: 2px solid #6EDD04;
   line-height: 1.5;
 }
 
+.career .team-details .team-description {
+  text-align: justify;
+  font-family:"Poppins", sans-serif;
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+}
+
+.career .team-details .team-list{
+  text-align: left;
+  font-family:"Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;;
+  font-weight: 300;
+}
 
 .career .container-fluid {
   width: 80%; 
@@ -3511,11 +3515,58 @@ max-height: 100%;
   background: #191a19a9;
   border-radius: 3px;
   box-shadow: 5px 5px #6ddd0460;
+  min-height: 65vh;
 }
 
 .career-innerW:hover {
   background: #344d34a9;
   border-radius: 5px;
+}
+
+.career-innerW1{
+  background: #191a19a9;
+  border-radius: 3px;
+  box-shadow: 5px 5px #6ddd0460;
+  min-height: 80vh;
+}
+
+.career-innerW1:hover {
+  background: #344d34a9;
+  border-radius: 5px;
+}
+
+.career-innerW2{
+  background: #191a19a9;
+  border-radius: 3px;
+  box-shadow: 5px 5px #6ddd0460;
+  min-height: 80vh;
+}
+
+.career-innerW2:hover {
+  background: #344d34a9;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .career .team-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  margin-left: 30%;
+  }
+
+  .career .team-details .team-position {
+    text-align: center;
+    font-family:"Poppins", sans-serif;
+    font-size: 14px;
+    color: white;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #6EDD04;
+    line-height: 1.5;
+  }
+
 }
 
 .arrow-list .bi-arrow-right-square-fill {
@@ -3544,7 +3595,8 @@ max-height: 100%;
 
   .col-lg-6 {
     width: 100%;
-    margin: 1px 0;
+    margin: 0;
+    padding: inherit;
   }
 
   .career .team-details {
@@ -3553,6 +3605,7 @@ max-height: 100%;
   
   .career .career-innerW {
     width: 100%;
+    height: fit-content;
     
   }
 
@@ -3584,8 +3637,8 @@ max-height: 100%;
 
   .career .c1 {
     /* width: 50%; */
-    padding-left: 5px; 
-    padding-right: 5px; 
+    padding-left: 25px; 
+    padding-right: 25px; 
     padding-top: 10px; 
     padding-bottom: 10px; 
   }

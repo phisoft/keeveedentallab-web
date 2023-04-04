@@ -651,8 +651,7 @@ background: rgba(12, 11, 9, 0.6);
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
+/* Desktop Navigation 
 */
 .navbar {
   padding: 0;
@@ -776,7 +775,9 @@ background: rgba(12, 11, 9, 0.6);
   line-height: 0;
   transition: 0.5s;
 }
-
+.navbar li {
+  position: relative;
+}
 @media screen and (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -838,10 +839,8 @@ background: rgba(12, 11, 9, 0.6);
     margin: 15px;
   }
 
-  /* 
-    *To Do
-    *This area need to watch, changes name or position 
-  */
+  /* To Do
+This area need to watch, changes name or position */
 
   .navbar-mobile .dropdown ul {
     /* position: static; */
@@ -854,7 +853,7 @@ background: rgba(12, 11, 9, 0.6);
     z-index: 99;
     opacity: 5;
     visibility: visible;
-    background: yellow;
+    background: #fff;
     color: black;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   }
@@ -891,7 +890,7 @@ background: rgba(12, 11, 9, 0.6);
     z-index: 99;
     opacity: 5;
     visibility: visible;
-    background: blue;
+    background: whitesmoke;
     color: black;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   }
@@ -909,7 +908,9 @@ background: rgba(12, 11, 9, 0.6);
   .navbar-mobile .dropdown:hover ul.dropdown:hover ul {
     display: block;
   }
-
+  li.dropdown {
+    display: block;
+  }
   .navbar-mobile .dropdown .dropdown > .dropdown-active {
     display: block;
   }

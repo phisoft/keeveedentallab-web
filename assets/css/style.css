@@ -776,7 +776,9 @@ background: rgba(12, 11, 9, 0.6);
   line-height: 0;
   transition: 0.5s;
 }
-
+.navbar li {
+  position: relative;
+}
 @media screen and (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -909,6 +911,9 @@ This area need to watch, changes name or position */
   }
 
   .navbar-mobile .dropdown .dropdown > .dropdown-active {
+    display: block;
+  }
+  li.dropdown {
     display: block;
   }
 }
@@ -3501,6 +3506,16 @@ page-banner {
     height: 100px;
     margin-left: 30%;
   }
+  .row .g-0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .career .container-fluid {
+    /*background-color: white;*/
+    margin-bottom: -50px;
+  }
 
   .career .team-details .team-position {
     text-align: center;
@@ -3575,6 +3590,29 @@ page-banner {
 
   .career .team-details {
     font-size: 13px;
+  }
+
+  .career .career-innerW {
+    width: 100%;
+    /*height: fit-content;
+    background-color: red;*/
+    min-height: fit-content;
+  }
+  .career .career-innerW1 {
+    width: 100%;
+    /*height: fit-content;
+    background-color: red;*/
+    min-height: fit-content;
+  }
+  .career .career-innerW2 {
+    width: 100%;
+    /*height: fit-content;
+    background-color: red;*/
+    min-height: fit-content;
+  }
+  .career .container-fluid {
+    /*background-color: white;*/
+    margin-bottom: -50px;
   }
 
   .career .c1 {
@@ -3901,7 +3939,7 @@ END OVERDENTURE
 }
 
 .abt-facebook h2 {
-  padding-top: 10%;
+  padding-top: 30%;
   text-align: left;
   font-family: "Poppins", sans-serif;
   color: #6edd04;

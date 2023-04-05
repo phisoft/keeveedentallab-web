@@ -776,7 +776,9 @@ background: rgba(12, 11, 9, 0.6);
   line-height: 0;
   transition: 0.5s;
 }
-
+.navbar li {
+  position: relative;
+}
 @media screen and (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -909,6 +911,9 @@ This area need to watch, changes name or position */
   }
 
   .navbar-mobile .dropdown .dropdown > .dropdown-active {
+    display: block;
+  }
+  li.dropdown {
     display: block;
   }
 }
@@ -3559,25 +3564,7 @@ page-banner {
 
   .career .career-innerW {
     width: 100%;
-    /*height: fit-content;
-    background-color: red;*/
-    min-height: fit-content;
-  }
-  .career .career-innerW1 {
-    width: 100%;
-    /*height: fit-content;
-    background-color: red;*/
-    min-height: fit-content;
-  }
-  .career .career-innerW2 {
-    width: 100%;
-    /*height: fit-content;
-    background-color: red;*/
-    min-height: fit-content;
-  }
-  .career .container-fluid {
-    /*background-color: white;*/
-    margin-bottom: -50px;
+    height: fit-content;
   }
 
   .career .c1 {
@@ -3586,12 +3573,10 @@ page-banner {
     padding-right: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    min-height: auto;
-    /*background-color: blue;*/
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
   .row .g-0 {
     display: flex;
     flex-wrap: wrap;
@@ -3920,6 +3905,9 @@ page-banner {
 END OVERDENTURE
 ================ */
 
+/* ===============
+    Facebook
+================*/
 .abt-facebook {
   background: url("../img/background/gif-bg.gif");
   background-size: cover;
@@ -3959,6 +3947,15 @@ END OVERDENTURE
   text-shadow: 1px 1px 1px #a1a0a02d;
 }
 
+.abt-facebook .row {
+  border-radius: 4px;
+}
+
+.abt-facebook .col-sm-7 {
+  display: flex;
+  justify-content: center;
+}
+
 .abt-facebook .fb-page {
   border-radius: 4px;
 }
@@ -3984,14 +3981,36 @@ END OVERDENTURE
 
   .col-sm-5 {
     margin-right: -50px;
+    margin-left: -50px;
   }
 
-  /* 
+  .abt-facebook .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-  .abt-facebook .fb-page {
-    margin: 0 0 0 20px;
-  } */
+  .abt-facebook .col-sm-7 {
+    margin-bottom: 30px;
+  }
+
+  .abt-facebook .col-sm-5 {
+    display: flex;
+    justify-content: center;
+  }
 }
+
+@media (max-width: 576px) {
+  .abt-facebook .col-sm-7,
+  .abt-facebook .col-sm-5 {
+    text-align: center;
+  }
+}
+
+/* ======================
+    Facebook End
+======================= */
 
 /* ==================================
           SECTION-TITLE-MOBILE

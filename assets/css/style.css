@@ -30,7 +30,7 @@ li {
 
 li i {
   margin-right: 10px;
-  align-self: flex-start;
+  align-self: center;
 }
 
 h1,
@@ -922,7 +922,7 @@ This area need to watch, changes name or position */
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background: url("../img/background/green-bg.png") top center;
   background-size: cover;
   position: relative;
@@ -940,8 +940,8 @@ This area need to watch, changes name or position */
 }
 
 #hero .container {
-  padding-top: 110px;
-  height: 100vh;
+  padding-top: 150px;
+  height: fit-content;
 }
 
 @media (max-width: 992px) {
@@ -1056,7 +1056,7 @@ This area need to watch, changes name or position */
     /* padding-left: 50px;
     padding-right: 30px; */
     /* margin-left: 16%; */
-    margin: 0 0 0 10%;
+    margin: auto;
     width: 300px;
     height: auto;
     /* position: absolute; */
@@ -2841,7 +2841,9 @@ section {
 
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
-  height: 35vh;
+  width: 100%;
+  height: 100%;
+
 }
 
 .gallery .gallery-item:hover img {
@@ -3501,8 +3503,8 @@ page-banner {
   .career .team-img {
     border-radius: 50%;
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: 200px;
     margin-left: 30%;
   }
   .row .g-0 {
@@ -3642,7 +3644,7 @@ page-banner {
 }
 
 .team-n .row {
-  margin-bottom: 5%;
+  margin-bottom: 5px;
 }
 
 .team-n .card {
@@ -3742,6 +3744,10 @@ page-banner {
   }
 }
 
+.card-deck .card {
+  margin: 0px;
+  height: 100%;
+}
 /* ==================
     OVERDENTURE
 ================== */
@@ -3824,11 +3830,11 @@ page-banner {
 
 .overdenture .tab2 .closebtn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  right: 40px;
   color: #6edd04;
   font-size: 40px;
   cursor: pointer;
+  top: 20px;
 }
 
 .overdenture .o1 {
@@ -3873,7 +3879,7 @@ page-banner {
   }
 
   .overdenture .o1 {
-    height: auto;
+    height: 20vh;
     padding: 20px;
   }
 
@@ -3962,7 +3968,7 @@ END OVERDENTURE
 @media screen and (max-width: 768px) {
   .abt-facebook {
     background-attachment: fixed;
-    height: 80vh;
+    height: fit-content;
   }
 
   .abt-facebook h2 {
@@ -3974,7 +3980,7 @@ END OVERDENTURE
 
   .fb-page {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     margin: 0;
   }
 

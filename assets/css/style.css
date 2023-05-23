@@ -3415,6 +3415,22 @@ page-banner {
   /* border-radius: 20px; */
 }
 
+.career .c2 {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 115px;
+  /* border-radius: 20px; */
+}
+
+.career .c3 {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 37px;
+  /* border-radius: 20px; */
+}
+
 .career .team-img {
   border-radius: 50%;
   object-fit: cover;
